@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melhor do Mundo | Votação</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="ball" aria-hidden="true"></div>
+    <p class="tag">🏀 Votação aberta · Temporada 2026</p>
+    <h1>Melhor do <span>Mundo</span></h1>
+    <p class="sub">Quem é o melhor jogador de basquete do mundo? Dê o seu voto e veja o placar mudar na hora.</p>
+
+    <div class="stats">
+      <div class="stat"><small>Total de votos</small><strong id="totalVotos">0</strong></div>
+      <div class="stat"><small>Líder</small><strong id="lider">—</strong></div>
+      <div class="stat"><small>Jogadores</small><strong id="totalJogadores">0</strong></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="actions">
+      <form id="formAdd">
+        <input id="inputNome" type="text" placeholder="Nome do jogador" required maxlength="30">
+        <input id="inputTime" type="text" placeholder="Time (opcional)" maxlength="30">
+        <button type="submit" class="btn btn-main">+ Adicionar</button>
+      </form>
+      <button id="btnZerar" class="btn btn-ghost">Zerar votos</button>
+    </section>
+
+    <h2>Placar</h2>
+    <section id="lista" class="lista"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
